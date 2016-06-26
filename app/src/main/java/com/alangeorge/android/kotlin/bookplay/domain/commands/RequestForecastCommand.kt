@@ -4,7 +4,7 @@ import com.alangeorge.android.kotlin.bookplay.data.ForecastRequest
 import com.alangeorge.android.kotlin.bookplay.domain.mappers.ForecastDataMapper
 import com.alangeorge.android.kotlin.bookplay.domain.model.ForecastList
 
-class RequestForecastCommand(val zip: String): Command<ForecastList> {
+class RequestForecastCommand(val zip: Long): Command<ForecastList> {
     override fun execute(): ForecastList =
-        ForecastDataMapper().convertFromDataModel(ForecastRequest(zip).execute())
+        ForecastDataMapper().convertFromDataModel(zip, ForecastRequest(zip).execute())
 }
