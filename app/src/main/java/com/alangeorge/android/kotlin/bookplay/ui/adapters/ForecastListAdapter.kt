@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import com.alangeorge.android.kotlin.bookplay.R
 import com.alangeorge.android.kotlin.bookplay.domain.model.Forecast
 import com.alangeorge.android.kotlin.bookplay.domain.model.ForecastList
-import com.alangeorge.android.kotlin.bookplay.ui.utils.ctx
+import com.alangeorge.android.kotlin.bookplay.extensions.ctx
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_forecast.view.*
 import java.text.DateFormat
